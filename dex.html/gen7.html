@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>Pokedex</h1>
+    <div class="pokeContainer" id="pokeContainer">
+
+       
+        <script src="/arquivos.js/script6mais.js"></script>
+        <script>
+            const fetchPokemons1 = async () => {
+    for (let i = 722; i <= 802; i++) {
+        await getPokemons(i);
+    }
+};
+fetchPokemons1();
+        </script>
+</body>
+
+</html>

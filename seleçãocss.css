@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background: radial-gradient(at 0% 0%, rgb(0, 19, 125), #1c63a1, rgb(50, 1, 50));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Isso vai centralizar verticalmente o conteúdo */
+}
+
+.container {
+    
+    display: flex;
+    flex-wrap: wrap; /* Permite que os elementos sejam envolvidos em linhas */
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+    transition: all 0.5s;
+}
+
+.pokemon {
+    background-color:  rgb(34, 109, 214);
+    width: calc(15% - 10px); /* Calcula a largura para que haja espaço para 4 elementos por linha */
+    /* 20px é a soma das margens horizontalmente */
+    display: flex;
+    flex-direction: column; /* Altera para exibir os itens em colunas */
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 3px 20px rgba(100, 100, 100, 0.5);
+    padding: 10px;
+    text-align: center;
+    margin: 7px; /* Adiciona margem entre os itens */
+}
+.container :hover{
+    background-color: rgb(237, 184, 39);
+    transform: scale(1.05);
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(139, 76, 76);
+}
+a:visited{
+    color: rgb(0, 0, 0);
+}  
+
+.pokemon :hover{
+    transform: none;
+    filter: none;
+}
